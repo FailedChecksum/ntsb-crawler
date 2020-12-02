@@ -1,0 +1,19 @@
+{
+  "name": "ntsb-report-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "tsc --outDir ./dist scraper.ts && node ./dist/scraper.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/puppeteer": "^5.4.0",
+    "puppeteer": "^5.5.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.2"
+  }
+}
