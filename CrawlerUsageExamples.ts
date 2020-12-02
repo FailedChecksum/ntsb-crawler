@@ -11,7 +11,7 @@ function runCrawler(crawler: ICrawler) {
 type ReportCrawlModel = { [key: string]: any };
 
 // a url to call with some report ata
-const url = "https://www.asias.faa.gov/apex/f?p=100:96:28973566159462::::P96_ENTRY_DATE,P96_FATAL_FLG,P96_MAKE_NAME:17-NOV-20";
+const url = "https://www.asias.faa.gov/apex/f?p=100:96:9886744837281::::P96_ENTRY_DATE,P96_FATAL_FLG,P96_MAKE_NAME:18-NOV-20";
 
 // an object fully defining a report crawl
 const reportCrawl = <ICrawlDefinition<ReportCrawlModel>>{
