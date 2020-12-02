@@ -30,9 +30,11 @@ const reportCrawl = <ICrawlDefinition<ReportCrawlModel>>{
   finalize: async (r) => console.log(`finalizing ${JSON.stringify(r)}`)
 };
 
-// example usage of builder
+// example usage of builder, configuring two separate jobs on the same url
 const oneDefinitionCrawler = CrawlBuilder.create(url)
+   // add crawl using arguments
   .addCrawl("report crawl from arguments", reportCrawl.expression, reportCrawl.finalize)
+   // add second crawl using definition object
   .addCrawlDefinition(reportCrawl)
   .build();
 
