@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "tsc --outDir ./dist scraper.ts && node ./dist/scraper.js"
+    "run": "tsc -p . && node ./dist/crawler.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/puppeteer": "^5.4.0",
-    "puppeteer": "^5.5.0"
+    "puppeteer": "^5.5.0",
+    "tslib": "^2.0.3"
   },
   "devDependencies": {
     "typescript": "^4.1.2"
